@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+<link rel="stylesheet" type="text/css" href="style.css">
+
+    <style>
+    	
+         body{
+         	overflow-x: hidden;
+         }
+
+         .paralax{
+         	position: absolute;
+         	height: 100%
+         }
+
+         .paralax-item{
+         	position: fixed;
+         	width: 100%;
+         	height: 100%;
+         	top: 0;
+         	left: 0;
+         }
+
+         .p-item1{
+         	background: url('imges/m_1.png') center/cover no-repeat;
+         }
+
+         .p-item3{
+         	background: url('imges/m_3.png') bottom/100% no-repeat;
+         	background-size: cover;
+         	background-position: center;
+         	z-index: 2;
+         }
+
+         .p-item4{
+         	position: absolute;
+         	top: 0;
+         	left: 0;
+         	width: 10000%;
+         	height: 100%;
+         	content: '';
+         	background: url('imges/fog.png') repeat-x;
+            background-size: contain;
+            background-position: center;
+            animation: fog 20s linear infinite;
+         }
+
+
+         .p-item4::before{
+         	position: absolute;
+         	top: 0;
+         	left: 0;
+         	width: 1000%;
+         	height: 100%;
+         	content: '';
+         	background: url('imges/fog.png') repeat-x;
+         	background-size: contain;
+            background-position: center;
+            animation: fog 20s linear infinite;
+            z-index: 1;
+         }
+
+
+         @keyframes fog{
+         	0%{
+         		transform: translate3d(0px, 0px, 0px);
+              
+         	}
+         	100%{
+         		transform: translate3d(-200vw, 0px, 0px);
+         	}
+         }
+
+         
+
+         .container{
+         	position: relative;
+         	z-index: 1;
+         	padding: 40px;
+         	max-width: 1140px;
+         	margin: 0 auto;
+         	margin-top: 100vh;
+         }
+
+         .content-header{
+         	font-family: fantasy;
+         	color: white;
+         	text-align: center !important;
+         	text-transform: uppercase;
+         	margin-right: -80%;
+         }
+
+         .content-header h1{
+         	font-size: 120px;
+         	font-weight: 600;
+         	color: white;
+         	margin-bottom: -40px;
+
+         } 
+
+         .content-header p{
+         	font-size: 40px;
+         	font-weight: 500;
+         	color: white;
+         }
+
+         .content{
+             position: relative;
+         	z-index: 1;
+         	padding: 40px;
+         	max-width: 1140px;
+         	margin: 0 auto;
+         	margin-top: 100vh;
+         }
+
+         h1{
+   color: orange;
+}
+
+p{
+   color: red;
+}
+
+img{
+   width: 120px;
+   height: 120px;
+}
+
+.text{
+   background: darkblue;
+    width: 1350px;
+    height: 150px;
+    font-size: 20px;
+}
+
+.image{
+   width: 100px;
+   height: 120px;
+   text-align: center;
+}
+
+.container2{
+   position: relative;
+   z-index: 1;
+   padding: 40px;
+   max-width: -500px;
+   margin: 0 auto;
+   margin-top: 100px;
+}
+
+.container3{
+   position: relative;
+   z-index: 1;
+   padding: 40px;
+   max-width: -500px;
+   margin: 0 auto;
+   margin-top: 100px;
+}
+
+.container4{
+   position: relative;
+   z-index: 1;
+   padding: 40px;
+   max-width: -500px;
+   margin: 0 auto;
+   margin-top: 100px;
+}
+
+    </style>
+</head>
+<body>
+	<div class="paralax">
+		<div class="paralax-item p-item1"></div>
+		<div class="paralax-item p-item2"></div>
+		<div class="paralax-item p-item3"></div>
+		<div class="paralax-item p-item4"></div>
+    </div>
+
+    <div class="container">
+         <div class="content-header">
+         	<h1>Паралакс</h1>
+         	<p>Hello</p>
+
+         </div>
+    </div>
+
+    <div class="content">
+         <img src="imges/astro.png">
+    </div>
+
+
+
+
+
+<div class="container5">
+      <h2>Блог</h2>
+            <div class="blog_post">
+               <div class="blog_post_img">
+                  <img src="123.jfif">
+               </div>
+               <div class="blog_post_info">
+                  <h1 class="blog_post_tittle">Технологический процесс</h1>
+                  <p class="blog_post_text">Как принято считать, непосредственные участники технического прогресса являются только методом политического участия и разоблачены. Приятно, граждане, наблюдать, как непосредственные участники технического прогресса будут разоблачены. А также действия представителей оппозиции, превозмогая сложившуюся непростую экономическую ситуацию, смешаны с не уникальными данными до степени совершенной неузнаваемости, из-за чего возрастает их статус бесполезности. Повседневная практика показывает, что реализация намеченных плановых заданий требует определения и уточнения экономической целесообразности принимаемых решений. Каждый из нас понимает очевидную вещь: современная методология разработки предоставляет широкие возможности для позиций, занимаемых участниками в отношении поставленных задач.</p>
+                  <a class="blog_post_btn" href="#">Подробнее</a>
+               </div>
+            </div>
+
+            <div class="blog_post">
+               <div class="blog_post_img">
+                  <img src="123.jfif">
+               </div>
+               <div class="blog_post_info">
+                  <h1 class="blog_post_tittle">Заголовок</h1>
+                  <p class="blog_post_text">текст</p>
+                  <a class="blog_post_btn" href="#">Подробнее</a>
+               </div>
+         </div>
+
+                  <div class="blog_post">
+            <div class="blog_post_img">
+               <img src="123.jfif">
+            </div>
+            <div class="blog_post_info">
+               <h1 class="blog_post_tittle">Заголовок</h1>
+               <p class="blog_post_text">текст</p>
+               <a class="blog_post_btn" href="#">Подробнее</a>
+            </div>
+         </div>
+
+   </div>
+
+
+    <script type="text/javascript" src="imges/paralax.js"></script>
+</body>
+</html>
+
