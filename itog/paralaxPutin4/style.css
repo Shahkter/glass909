@@ -1,0 +1,338 @@
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+.container5{
+   background: url('imges/m_1.png');
+   position: relative;
+   z-index: 1;
+   padding: 40px;
+   max-width: -500px;
+   margin: 0 auto;
+   margin-top: 100px;
+}
+
+.container5 h2{
+   font-size: 50px;
+   letter-spacing: 1px;
+   color: darkgreen;
+   padding: 10px;
+   border: 2px dashed darkblue;
+   text-transform: uppercase;
+   display: inline-block;
+   cursor: pointer;
+   text-align: center;
+   margin-top: 90px;
+   margin-left: 375px;
+}
+
+.blog_post{
+   width: 100%;
+   max-width: 98rem;
+   padding: 5rem;
+   background-color: blue;
+   box-shadow: 0 1.4rem 8rem rgba(0, 0, 0, 0.2);
+   display: flex;
+   align-items: center;
+   border-radius: .8rem;
+   margin: 50px;
+}
+
+.blog_post_img{
+   min-width: 35rem;
+   max-width: 35rem;
+   height: 30rem;
+   transform: translateX(-8rem);
+   position: relative;
+}
+
+.blog_post_img img{
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+   display: block;
+}
+
+.blog_post_img img:before{
+   content:'';
+   width: 100%;
+   height: 100%;
+   position: absolute;
+   top: 0;
+   left: 0;
+   box-shadow: .5rem .5rem 3rem 1px rgba(0, 0, 0, 0.5);
+}
+
+.blog_post_tittle{
+   font-family: fantasy;
+   font-weight: 400;
+   font-size: 2.5rem;
+   margin: 1.5rem 0 2rem;
+   text-transform: uppercase;
+   color: white;
+}
+
+.blog_post_text{
+   font-family: fantasy;
+   font-weight: 400;
+   margin-bottom: 1rem;
+   font-size: 1.5rem;
+   color: white;
+}
+
+.blog_post_btn{
+   font-family: fantasy;
+   font-weight: 400;
+   display: inline-block;
+   padding:  1.5rem 3rem;
+   letter-spacing: 1px;
+   text-transform: uppercase;
+   font-size: 2rem;
+   color: white;
+   border-radius: .8rem;
+   text-decoration: none;
+   background: linear-gradient(to right, #c945cf 0% #04f6bd);
+}
+
+.block_post_btn:hover{
+   background: linear-gradient(to right, #c945cf 0% #04f6bd);
+}
+
+
+         body{
+            overflow-x: hidden;
+         }
+
+         .paralax{
+            height: 100%;
+         }
+
+         .paralax-item{
+            position: absolute;
+            width: 100%;
+            
+            min-height: 100vh;
+            top: 0;
+            left: 0;
+         }
+
+         .p-item1{
+            background: url('imges/m_1.png') center/cover no-repeat;
+         }
+
+         .p-item3{
+            background: url('imges/m_3.png') bottom/100% no-repeat;
+            background-size: cover;
+            background-position: center;
+            z-index: 2;
+         }
+
+         .p-item4{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 10000%;
+            height: 100%;
+            content: '';
+            background: url('imges/fog.png') repeat-x;
+            background-size: contain;
+            background-position: center;
+            animation: fog 20s linear infinite;
+         }
+
+
+         .p-item4::before{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 1000%;
+            height: 100%;
+            content: '';
+            background: url('imges/fog.png') repeat-x;
+            background-size: contain;
+            background-position: center;
+            animation: fog 20s linear infinite;
+            z-index: 1;
+         }
+
+
+         @keyframes fog{
+            0%{
+               transform: translate3d(0px, 0px, 0px);
+              
+            }
+            100%{
+               transform: translate3d(-200vw, 0px, 0px);
+            }
+         }
+
+         
+
+         .container{
+            position: relative;
+            z-index: 1;
+            padding: 40px;
+            max-width: 1140px;
+            margin: 0 auto;
+            margin-top: 100vh;
+         }
+
+         .content-header{
+            z-index: -1;
+            margin-top: -500px;
+            font-family: fantasy;
+            color: white;
+            text-align: center !important;
+            text-transform: uppercase;
+            margin-right: -80%;
+         }
+
+         .content-header h1{
+            font-size: 120px;
+            font-weight: 600;
+            color: white;
+            margin-bottom: -40px;
+
+         } 
+
+         .content-header p{
+            font-size: 40px;
+            font-weight: 500;
+            color: white;
+         }
+
+         .content{
+             position: relative;
+            z-index: 1;
+            padding: 40px;
+            max-width: 1140px;
+            margin: 0 auto;
+            margin-top: 100vh;
+         }
+
+         h1{
+   color: orange;
+}
+
+p{
+   color: red;
+}
+
+img{
+   width: 120px;
+   height: 120px;
+}
+
+.text{
+   background: darkblue;
+    width: 1350px;
+    height: 150px;
+    font-size: 20px;
+}
+
+.image{
+   width: 100px;
+   height: 120px;
+   text-align: center;
+}
+
+.container2{
+   position: relative;
+   z-index: 1;
+   padding: 40px;
+   max-width: -500px;
+   margin: 0 auto;
+   margin-top: 100px;
+}
+
+.container3{
+   position: relative;
+   z-index: 1;
+   padding: 40px;
+   max-width: -500px;
+   margin: 0 auto;
+   margin-top: 100px;
+}
+
+.container4{
+   position: relative;
+   z-index: 1;
+   padding: 40px;
+   max-width: -500px;
+   margin: 0 auto;
+   margin-top: 100px;
+}
+
+
+footer{
+   background: url('imges/m_1.png');
+   position: relative;
+   bottom: 0px;
+   width: 100%;
+}
+
+.footerContainer{
+   width: 100%;
+   padding: 70px 30px 20px;
+}
+
+.icons{
+   display: flex;
+   justify-content: center;
+}
+
+.icons a{
+   text-decoration: none;
+   padding: 10px;
+   margin: 10px;
+   border-radius: 50%;
+}
+
+.icons a i{
+   font-size: 2em;
+   color:white;
+}
+
+.icons a:hover i{
+   color: blue;
+   transition: 0.3s;
+}
+
+.icons a:hover{
+   background-color: #111;
+   transition: 0.3s;
+}
+
+.footerNav{
+   margin: 30px 0;
+}
+
+.footerNav ul{
+   display: flex;
+   justify-content: center;
+   list-style: none;
+}
+
+.footerNav ul li a{
+   color: white;
+   text-decoration: none;
+   margin: 20px;
+   font-size: 1em;
+   opacity: 0.5;
+   transition: 0.3s;
+}
+
+.footerNav ul li a:hover{
+   opacity: 1;
+}
+
+.footerBottom{
+   padding: 20px;
+   text-align: center;
+}
+
+.footerBottom p{
+   color: white;
+}
